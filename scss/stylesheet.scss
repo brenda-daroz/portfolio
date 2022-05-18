@@ -1,0 +1,7 @@
+@import 'variables', 'homepage', 'reset', 'menu', 'projects', 'footer';
+
+body {
+    background-color: $background-color;
+    font-family: $font;
+    height: 100vh;
+}

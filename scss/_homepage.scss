@@ -1,0 +1,63 @@
+.home-container {
+    height: 40vh;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+   
+}
+
+.home__intro {
+    font-family: 'Alegreya Sans', sans-serif;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    
+}
+
+.home__name {
+    width: 100%;
+    font-family: $title-font;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-shadow:
+        0 0 5px rgb(242, 128, 168),
+        0 0 10px rgb(249, 237, 242);
+    letter-spacing: 0.4rem;
+    font-weight: map-get($font-weights, medium);
+    border-bottom: solid 2px rgb(242, 128, 168);
+}
+
+.home__job {
+    font-family: 'Alegreya Sans', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+    color: rgb(244, 58, 123);
+    text-shadow:
+            0 0 5px rgb(245, 229, 234),
+            0 0 10px rgb(136, 135, 136);
+    font-size: 2rem;
+    font-weight: map-get($font-weights, bold);
+    letter-spacing: 0.6rem;
+    padding-top: 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .home__name {
+        font-size: 3rem;
+    }
+
+    .home__job {
+        font-size: 1.5rem;
+    }
+}
