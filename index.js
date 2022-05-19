@@ -60,6 +60,8 @@ function createProject(project) {
     aGitHub.href = project.gitHub
     aLiveCode.innerHTML = "Live Code"
     aGitHub.innerHTML = "GitHub"
+    aLiveCode.target = "_blank"
+    aGitHub.target = "_blank";
 
     divItem.append(itemParagraph, itemImage, ul)
     ul.appendChild(li)
@@ -78,11 +80,13 @@ const projectsList = [
 ]
 
 function renderProject(projects) {
-    for (let i = 0; i < projects.length; i++) {
-        const element = projects[i];
-        createProject(element)
-    }
+    projects.forEach(project => {
+        createProject(project)
+    });
+    // for (let i = 0; i < projects.length; i++) {
+    //     const element = projects[i];
+    //     createProject(element)
+    // }
 }
-
 
 renderProject(projectsList)
