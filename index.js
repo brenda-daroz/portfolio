@@ -80,7 +80,6 @@ const projectsList = [
 function renderProject(projects) {
     for (let i = 0; i < projects.length; i++) {
         const element = projects[i];
-        console.log(element)
         createProject(element)
     }
 }
