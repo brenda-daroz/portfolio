@@ -1,0 +1,89 @@
+const h = document.createElement.bind(document)
+
+const nftPreview = {
+    title: "Nft Preview Card",
+    image: "images/nft-preview-card.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/nft-preview-card-component-main/index.html",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/nft-preview-card-component-main"
+}
+
+const qrCodeComponent = {
+    title: "Qr Code Component",
+    image: "images/qr-code-component.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/qr-code-component/index.html",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/qr-code-component"
+}
+
+const baseApparel = {
+    title: "Base Apparel Coming Soon",
+    image: "images/base-apparel-coming-soon.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/base-apparel-coming-soon-master/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/base-apparel-coming-soon-master"
+}
+
+const timeTracking = {
+    title: "Time Tracking Dashboard",
+    image: "images/time-tracking-dashboard.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/time-tracking-dashboard-main/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/time-tracking-dashboard-main"
+}
+
+const clipboardLanding = {
+    title: "Clipboard Landing Page",
+    image: "images/clipboard-landing-page.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/clipboard-landing-page-master/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/clipboard-landing-page-master"
+}
+
+const formValidation = {
+    title: "Form Validation",
+    image: "images/form-validation.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/form-validation/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/form-validation"
+}
+
+
+function createProject(project) {
+    const divItem = h("div")
+    divItem.classList.add("projects__item")
+    const itemParagraph = h("p")
+    itemParagraph.classList.add("projects__item--title")
+    itemParagraph.innerHTML = project.title
+    const itemImage = h("img")
+    itemImage.classList.add("img")
+    itemImage.src = project.image
+    const ul = h("ul")
+    const li = h("li")
+    const aLiveCode = h("a")
+    const aGitHub = h("a")
+    aLiveCode.href = project.liveCode
+    aGitHub.href = project.gitHub
+    aLiveCode.innerHTML = "Live Code"
+    aGitHub.innerHTML = "GitHub"
+
+    divItem.append(itemParagraph, itemImage, ul)
+    ul.appendChild(li)
+    li.append(aLiveCode, aGitHub)
+
+    document.getElementById("projects__container").appendChild(divItem)
+}
+
+const projectsList = [
+    qrCodeComponent,
+    nftPreview,
+    baseApparel,
+    timeTracking,
+    clipboardLanding,
+    formValidation
+]
+
+function renderProject(projects) {
+    for (let i = 0; i < projects.length; i++) {
+        const element = projects[i];
+        console.log(element)
+        createProject(element)
+    }
+}
+
+
+renderProject(projectsList)
