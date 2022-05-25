@@ -42,6 +42,12 @@ const formValidation = {
     gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/form-validation"
 }
 
+const tipCalculator = {
+    title: "Tip Calculator",
+    image: "images/splitter-tip.png",
+    liveCod: "https://brenda-daroz.github.io/frontend-mentor/tip-calculator-app-main/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/tip-calculator-app-main"
+}
 
 function createProject(project) {
     const divItem = h("div")
@@ -76,7 +82,8 @@ const projectsList = [
     baseApparel,
     timeTracking,
     clipboardLanding,
-    formValidation
+    formValidation,
+    tipCalculator
 ]
 
 function renderProject(projects) {
