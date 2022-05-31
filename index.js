@@ -45,8 +45,15 @@ const formValidation = {
 const tipCalculator = {
     title: "Tip Calculator",
     image: "images/splitter-tip.png",
-    liveCod: "https://brenda-daroz.github.io/frontend-mentor/tip-calculator-app-main/",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/tip-calculator-app-main/",
     gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/tip-calculator-app-main"
+}
+
+const adviceGenerator = {
+    title: "Advice Generator",
+    image: "images/advice-generator.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/advice-generator-app-main/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/advice-generator-app-main"
 }
 
 function createProject(project) {
@@ -83,7 +90,8 @@ const projectsList = [
     timeTracking,
     clipboardLanding,
     formValidation,
-    tipCalculator
+    tipCalculator,
+    adviceGenerator
 ]
 
 function renderProject(projects) {
