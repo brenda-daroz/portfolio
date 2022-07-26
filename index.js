@@ -56,6 +56,12 @@ const adviceGenerator = {
     gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/advice-generator-app-main"
 }
 
+const testimonislsSlider = {
+    title: "Testimonials Slider",
+    image: "images/testimonials-slider.png",
+    liveCode: "https://brenda-daroz.github.io/frontend-mentor/coding-bootcamp-testimonials-slider-master/",
+    gitHub: "https://github.com/brenda-daroz/frontend-mentor/tree/master/coding-bootcamp-testimonials-slider-master"
+}
 function createProject(project) {
     const divItem = h("div")
     divItem.classList.add("projects__item")
@@ -91,7 +97,8 @@ const projectsList = [
     clipboardLanding,
     formValidation,
     tipCalculator,
-    adviceGenerator
+    adviceGenerator,
+    testimonislsSlider
 ]
 
 function renderProject(projects) {
