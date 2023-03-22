@@ -105,10 +105,6 @@ function renderProject(projects) {
     projects.forEach(project => {
         createProject(project)
     });
-    // for (let i = 0; i < projects.length; i++) {
-    //     const element = projects[i];
-    //     createProject(element)
-    // }
 }
 
 renderProject(projectsList)

@@ -1,0 +1,249 @@
+.home-container {
+  margin-bottom: 2rem;
+  padding: 2rem 2rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.home__intro {
+  font-family: "Rubik Mono One", sans-serif;
+  text-transform: uppercase;
+  color: rgb(244, 58, 123);
+  font-size: 3rem;
+}
+.home__intro span {
+  color: rgb(175, 175, 175);
+}
+
+.home__profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 93px 69px rgba(246, 36, 211, 0.4);
+}
+
+.intro_about {
+  margin-top: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.intro_about h3 {
+  width: 100%;
+}
+
+.sections__title {
+  top: 0;
+  font-weight: bold;
+  font-size: 6rem;
+  color: #b0b0b0;
+  margin-left: -50px;
+  z-index: -1;
+}
+
+.intro_about-p {
+  padding: 0 4rem;
+  font-size: 1.4rem;
+  line-height: 30px;
+  text-indent: 2em;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+  #intro_text {
+    order: 2;
+  }
+  #intro_photo {
+    order: 1;
+  }
+  .intro_about-p {
+    padding: 0 2rem;
+  }
+  .home__intro {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.4em;
+  }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px rgb(175, 175, 175) solid;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.social-media__list {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+  align-items: center;
+}
+
+.social-media__list--link {
+  text-decoration: none;
+  color: rgb(244, 58, 123);
+  font-size: 1.2rem;
+}
+.social-media__list--link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .social-media {
+    width: 100%;
+  }
+  .social-media__list {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.projects {
+  margin: 0 2rem 2rem 2rem;
+  padding: 2rem 2rem;
+}
+
+.projects__title {
+  color: rgb(244, 58, 123);
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.projects__container {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 18rem;
+  height: 15rem;
+}
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 16rem;
+  width: 20rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(9.2px);
+          backdrop-filter: blur(9.2px);
+  padding: 1rem;
+}
+.projects__item--title {
+  font-size: 1.4rem;
+  color: #303730;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  width: 100%;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(244, 58, 123);
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .projects__title {
+    text-align: center;
+    margin: 0;
+  }
+}
+footer {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(9.2px);
+          backdrop-filter: blur(9.2px);
+  padding: 0.8rem 0;
+}
+footer p {
+  color: rgb(244, 58, 123);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Alegreya Sans", sans-serif;
+  height: 100vh;
+}/*# sourceMappingURL=stylesheet.css.map */

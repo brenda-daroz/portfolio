@@ -1,63 +1,93 @@
 .home-container {
-    height: 40vh;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-   
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .home__intro {
-    font-family: 'Alegreya Sans', sans-serif;
-    text-transform: uppercase;
-    color: $primary-color;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    
+  font-family: $title-font;
+  text-transform: uppercase;
+  color: $primary-color;
+  font-size: 3rem;
+
+  & span {
+    color: $secondary-color;
+  }
 }
 
-.home__name {
+.home__profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 93px 69px rgba(246, 36, 211, 0.4);
+}
+
+.intro_about {
+  // position: relative;
+  margin-top: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+
+  & h3 {
     width: 100%;
-    font-family: $title-font;
-    text-align: center;
-    color: $white;
-    text-transform: uppercase;
-    font-size: 4rem;
-    text-shadow:
-        0 0 5px rgb(242, 128, 168),
-        0 0 10px rgb(249, 237, 242);
-    letter-spacing: 0.4rem;
-    font-weight: map-get($font-weights, medium);
-    border-bottom: solid 2px rgb(242, 128, 168);
+  }
 }
 
-.home__job {
-    font-family: 'Alegreya Sans', sans-serif;
-    text-transform: uppercase;
-    font-style: italic;
-    margin: 0;
-    color: rgb(244, 58, 123);
-    text-shadow:
-            0 0 5px rgb(245, 229, 234),
-            0 0 10px rgb(136, 135, 136);
-    font-size: 2rem;
-    font-weight: map-get($font-weights, bold);
-    letter-spacing: 0.6rem;
-    padding-top: 1rem;
+.sections__title {
+  // position: absolute;
+  top: 0;
+  font-weight: bold;
+  font-size: 6rem;
+  color: rgba($color: #b0b0b0, $alpha: 1);
+  margin-left: -50px;
+  z-index: -1;
+}
+
+.intro_about-p {
+  padding: 0 4rem;
+  font-size: 1.4rem;
+  line-height: 30px;
+  text-indent: 2em;
+  color: black;
 }
 
 
 @media screen and (max-width: 500px) {
-    
-    .home__name {
-        font-size: 3rem;
-    }
 
-    .home__job {
-        font-size: 1.5rem;
-    }
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #intro_text {
+    order: 2
+  }
+
+  #intro_photo {
+    order: 1
+  }
+
+  .intro_about-p {
+    padding: 0 2rem;
+  }
+
+  .home__intro {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.4em;
+  }
+
 }
