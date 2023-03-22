@@ -1,7 +1,6 @@
 .home-container {
-  margin-bottom: 2rem;
   padding: 2rem 2rem;
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,43 +19,39 @@
   font-family: "Rubik Mono One", sans-serif;
   text-transform: uppercase;
   color: rgb(244, 58, 123);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .home__intro span {
   color: rgb(175, 175, 175);
 }
 
 .home__profile {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 93px 69px rgba(246, 36, 211, 0.4);
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  box-shadow: 0px 0px 93px 69px rgba(244, 58, 123, 0.5);
 }
 
 .intro_about {
-  margin-top: 1.5rem;
-  width: 80%;
-  margin: 0 auto;
-}
-.intro_about h3 {
-  width: 100%;
+  margin: 0 2rem 2rem 2rem;
 }
 
 .sections__title {
-  top: 0;
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 4rem;
   color: #b0b0b0;
-  margin-left: -50px;
-  z-index: -1;
+  margin-left: -25px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .intro_about-p {
-  padding: 0 4rem;
   font-size: 1.4rem;
   line-height: 30px;
   text-indent: 2em;
   color: black;
+  width: 70%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -77,6 +72,12 @@
     text-align: center;
     margin: 2rem 0;
     font-size: 1.4em;
+  }
+  .sections__title {
+    font-size: 2rem;
+  }
+  .intro_about {
+    padding: 0;
   }
 }
 *, *:before, *:after {
@@ -165,7 +166,6 @@ input {
 }
 .projects {
   margin: 0 2rem 2rem 2rem;
-  padding: 2rem 2rem;
 }
 
 .projects__title {
@@ -244,6 +244,6 @@ footer p {
 
 body {
   background-color: #ffffff;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   height: 100vh;
 }/*# sourceMappingURL=stylesheet.css.map */
