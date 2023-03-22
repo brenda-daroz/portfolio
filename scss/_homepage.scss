@@ -63,6 +63,7 @@
   .home {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   #intro_text {
@@ -73,14 +74,20 @@
     order: 1
   }
 
+  .home__profile {
+    width: 250px;
+  height: 250px;
+  }
+
   .intro_about-p {
     padding: 0 2rem;
+    width: 100%;
   }
 
   .home__intro {
     text-align: center;
     margin: 2rem 0;
-    font-size: 1.4em;
+    font-size: 2em;
   }
 
   .sections__title {
