@@ -45,7 +45,10 @@ const github = {
   image: "https://brandeps.com/icon-download/G/Github-icon-vector-22.svg"
 }
 
-
+const bootstrap = {
+  title: "Bootstrap",
+  image: "https://brandeps.com/icon-download/B/Bootstrap-icon-vector-07.svg"
+}
 
 
 function createSkill(skill) {
@@ -63,7 +66,7 @@ function createSkill(skill) {
 }
 
 const skillsList = [
-  html, css, sass, js, react, rails, sql, github, git
+  html, css, sass, js, react, rails, sql, github, git, bootstrap
 ]
 
 function renderSkill(skills) {
