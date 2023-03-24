@@ -6,7 +6,7 @@ const weatherApp = {
   liveCode: "https://brenda-daroz.github.io/weather-app-react/",
   gitHub: "https://github.com/brenda-daroz/weather-app-react",
   p: ["Built with React",
-    "Used API calls from WeatherApp to fetch weather information",
+    "Used API calls from OpenWeatherMap to fetch weather information",
     "Used Unsplash API to fetch background images that dynamically change based on the weather"]
 }
 
