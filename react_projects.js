@@ -7,7 +7,7 @@ const weatherApp = {
   gitHub: "https://github.com/brenda-daroz/weather-app-react",
   p: ["Built with React",
     "Used API calls from WeatherApp to fetch weather information",
-    "Used Unsplash API to fetch background images"]
+    "Used Unsplash API to fetch background images that dynamically change based on the weather"]
 }
 
 const movieSearchApp = {
@@ -16,7 +16,8 @@ const movieSearchApp = {
   liveCode: "https://brenda-daroz.github.io/movie-search-app/",
   gitHub: "https://github.com/brenda-daroz/movie-search-app",
   p: ["Built with React",
-    "Used API calls from OMDB to fetch movie information"]
+    "Used API calls from The Movie Database (TMDB) to fetch movie information",
+    "Used search functionality to filter movies by title"]
 }
 
 function createProject(project) {
