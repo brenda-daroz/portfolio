@@ -14,8 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <script src="index.js" async></script>
-  <script src="skills.js" async></script>
+  <script type="module" src="static_projects.js" async></script>
+  <script type="module" src="react_projects.js" async></script>
+  <script type="module" src="skills.js" async></script>
 
 </head>
 
@@ -25,7 +26,7 @@
     <nav class="social-media">
       <ul class="social-media__list">
         <li class="github">
-          <a href="#" target="_blank" class="social-media__list--link">
+          <a href="#about" target="_blank" class="social-media__list--link">
             About me
           </a>
         </li>
@@ -60,7 +61,7 @@
     </div>
 
     <div class="intro_about">
-      <h3 class="sections__title">
+      <h3 class="sections__title" id="about">
         ##about
       </h3>
       <p class="intro_about-p">With a PhD in Biotechnology and a passion for coding, I am excited to be transitioning
@@ -79,18 +80,18 @@
         ##skills
       </h3>
       <div id="img-skills-wrapper" class="img-skills-wrapper">
-
-
       </div>
     </div>
 
     <section class="projects">
 
       <h3 class="sections__title">##projects</h3>
-
-
-      <div id="projects__container" class="projects__container">
+      <h4 class="sections__title-type">React</h4>
+      <div id="react-projects__container" class="react-projects__container">
       </div>
+      <h4 class="sections__title-type">HTML, CSS and Vanilla JavaScript</h4>
+      <div id="statict-projects__container" class="projects__container"></div>
+
     </section>
   </main>
 

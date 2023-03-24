@@ -1,0 +1,59 @@
+
+/* CSS */
+.main-project-button {
+  align-items: center;
+  background-color: rgba($color: $primary-color, $alpha: 1) ;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.main-project-button:after {
+  background-color: black;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(7px, 7px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.main-project-button:hover:after {
+  transform: translate(0, 0);
+}
+
+.main-project-button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.main-project-button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .main-project-button {
+    padding: 0 40px;
+  }
+}

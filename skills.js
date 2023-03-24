@@ -1,4 +1,4 @@
-const y = document.createElement.bind(document)
+import { h } from "./static_projects.js"
 
 const html = {
   title: "HTML",
@@ -52,12 +52,12 @@ const bootstrap = {
 
 
 function createSkill(skill) {
-  const divItem = y("div")
+  const divItem = h("div")
   divItem.classList.add("img-skills-container")
-  const itemImage = y("img")
+  const itemImage = h("img")
   itemImage.classList.add("img-skills")
   itemImage.src = skill.image
-  const itemParagraph = y("p")
+  const itemParagraph = h("p")
   itemParagraph.innerHTML = skill.title
 
   divItem.append(itemImage, itemParagraph)

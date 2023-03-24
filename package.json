@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "portfolio",
+  "description": "",
+  "version": "1.0.0",
+  "main": "react_projects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenda-daroz/portfolio.git"
+  },
+  "author": "brenda-daroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenda-daroz/portfolio/issues"
+  },
+  "homepage": "https://github.com/brenda-daroz/portfolio#readme",
+  "dependencies": {
+    "hyperscript": "^2.0.2"
+  }
+}
