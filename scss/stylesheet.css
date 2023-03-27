@@ -32,8 +32,15 @@
   box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075), 0 2px 2px hsla(0, 0%, 0%, 0.075), 0 4px 4px hsla(0, 0%, 0%, 0.075), 0 8px 8px hsla(0, 0%, 0%, 0.075), 0 16px 16px hsla(0, 0%, 0%, 0.075);
 }
 
-.intro_about {
-  margin: 0 2rem 2rem 2rem;
+.main_container {
+  margin: 0 6rem 2rem 6rem;
+}
+
+.intro_about,
+.intro_skills {
+  align-items: center;
+  display: flex;
+  margin: 4rem 0 4rem 0;
 }
 
 .sections__title {
@@ -48,7 +55,6 @@
 .intro_about-p {
   font-size: 1.4rem;
   line-height: 30px;
-  text-indent: 2em;
   color: black;
   width: 70%;
   margin: 0 auto;
@@ -84,6 +90,16 @@
   }
   .intro_about {
     padding: 0;
+  }
+  .intro_about,
+  .intro_skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .main_container {
+    margin: 0 2rem 2rem 2rem;
   }
 }
 *, *:before, *:after {
@@ -170,10 +186,6 @@ input {
     justify-content: space-around;
   }
 }
-.projects {
-  margin: 0 2rem 2rem 2rem;
-}
-
 .projects__title {
   color: rgb(244, 95, 147);
   font-size: 2rem;
