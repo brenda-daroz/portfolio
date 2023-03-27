@@ -7,7 +7,9 @@ const weatherApp = {
   gitHub: "https://github.com/brenda-daroz/weather-app-react",
   p: ["Built with React",
     "Used API calls from OpenWeatherMap to fetch weather information",
-    "Used Unsplash API to fetch background images that dynamically change based on the weather"]
+    "Used Unsplash API to fetch background images that dynamically change based on the weather"],
+  language: "react"
+
 }
 
 const movieSearchApp = {
@@ -17,7 +19,25 @@ const movieSearchApp = {
   gitHub: "https://github.com/brenda-daroz/movie-search-app",
   p: ["Built with React",
     "Used API calls from The Movie Database (TMDB) to fetch movie information",
-    "Used search functionality to filter movies by title"]
+    "Used search functionality to filter movies by title"],
+  language: "react"
+}
+
+const miseEnPlace = {
+  title: "Mise en place",
+  image: "images/mise-en-place.png",
+  liveCode: "https://www.mise-en-place.fun/",
+  gitHub: "https://github.com/brenda-daroz/mise-en-place",
+  p: ["Web application to help users search recipes and have a nice user experience",
+    "Built with Ruby on Rails, StimulusJS, PostgreSQL, and Bootstrap",
+    "Used Spoonacular API to fetch recipes and ingredients",
+    "Used Cloudinary API to upload and store images",
+    "Used Active Storage to store images in the database",
+    "Used StimulusJS to add functionality to change update portion size and units measurement",
+    "Search functionality to filter recipes by title and ingredients",
+    "Cooking mode to display the steps of the recipe",
+  ],
+  language: "ruby"
 }
 
 function createProject(project) {
@@ -56,10 +76,14 @@ function createProject(project) {
   ul.appendChild(li)
   li.append(aLiveCode, aGitHub)
 
-  document.getElementById("react-projects__container").appendChild(divItem)
+  if (project.language == "react") {
+    document.getElementById("react-projects__container").appendChild(divItem)
+  } else if (project.language == "ruby") {
+    document.getElementById("ruby-projects__container").appendChild(divItem)
+  }
 }
 
-let projects = [weatherApp, movieSearchApp]
+let projects = [weatherApp, movieSearchApp, miseEnPlace]
 
 function renderProject(projects) {
   projects.forEach(project => {
