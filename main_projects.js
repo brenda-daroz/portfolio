@@ -58,11 +58,11 @@ function createProject(project) {
     divText.innerHTML += "<p>" + project.p[i] + "</p>";
   const ul = h("ul")
   const li = h("li")
-  li.classList.add("main-project-buttons")
+  li.classList.add("buttons")
   const aLiveCode = h("a")
-  aLiveCode.classList.add("main-project-button")
+  aLiveCode.classList.add("button")
   const aGitHub = h("a")
-  aGitHub.classList.add("main-project-button")
+  aGitHub.classList.add("button")
   aLiveCode.href = project.liveCode
   aGitHub.href = project.gitHub
   aLiveCode.innerHTML = "Live Code"

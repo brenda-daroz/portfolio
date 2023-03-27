@@ -15,14 +15,13 @@
 
 .img {
   width: 18rem;
-  height: 15rem;
+  height: 14rem;
 }
 
 .projects__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 16rem;
+  height: 18rem;
   width: 20rem;
   box-sizing: border-box;
   margin-top: 2rem;
@@ -43,7 +42,6 @@
 .react-projects__container {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   margin: 0rem 2rem 2rem 2rem;
 }
 
@@ -67,7 +65,7 @@
   align-items: center;
 }
 
-.main-project-buttons {
+.buttons {
   display: flex;
   justify-content: space-between;
   margin: 1rem 1rem;
@@ -89,28 +87,14 @@
 
 ul {
   width: 100%;
-
-  .projects__item--links {
-
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-
-    a {
-      text-decoration: none;
-      color: $primary-color;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
 }
 
 .projects__item--title {
   font-size: 1.4rem;
   color: $projects-title-font-color;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: left;
 }
 
 .main-project-title {
@@ -146,7 +130,7 @@ ul {
     margin: 0;
    }
 
-   .main-project-buttons {
+   .buttons {
     margin: 1rem 0rem;
    }
 }

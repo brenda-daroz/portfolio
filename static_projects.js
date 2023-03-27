@@ -74,9 +74,11 @@ function createProject(project) {
   itemImage.src = project.image
   const ul = h("ul")
   const li = h("li")
-  li.classList.add("projects__item--links")
+  li.classList.add("buttons", "projects__item--buttons")
   const aLiveCode = h("a")
+  aLiveCode.classList.add("button", "projects__item--button")
   const aGitHub = h("a")
+  aGitHub.classList.add("button", "projects__item--button")
   aLiveCode.href = project.liveCode
   aGitHub.href = project.gitHub
   aLiveCode.innerHTML = "Live Code"
@@ -84,7 +86,7 @@ function createProject(project) {
   aLiveCode.target = "_blank"
   aGitHub.target = "_blank";
 
-  divItem.append(itemParagraph, itemImage, ul)
+  divItem.append(itemImage, itemParagraph, ul)
   ul.appendChild(li)
   li.append(aLiveCode, aGitHub)
 
