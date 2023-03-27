@@ -1,12 +1,15 @@
 footer {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.2px);
-    padding: 0.8rem 0;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  padding: 0.8rem 0;
+  height: 80px;
+  display: grid;
+  place-items: center;
 
-    p {
-        color: $primary-color;
-        text-align: center;
-        font-size: 0.8rem;
-    }
+  p {
+    color: rgba($color: $primary-color, $alpha: 0.8);
+    font-size: 1rem;
+
+  }
 }
