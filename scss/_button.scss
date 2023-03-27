@@ -1,15 +1,16 @@
-
 /* CSS */
-.main-project-button {
+// main style for buttons
+
+.button {
   align-items: center;
-  background-color: rgba($color: $primary-color, $alpha: 1) ;
+  background-color: rgba($color: $primary-color, $alpha: 1);
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -24,7 +25,7 @@
   touch-action: manipulation;
 }
 
-.main-project-button:after {
+.button:after {
   background-color: black;
   border-radius: 8px;
   content: "";
@@ -39,21 +40,33 @@
   z-index: -1;
 }
 
-.main-project-button:hover:after {
+.button:hover:after {
   transform: translate(0, 0);
 }
 
-.main-project-button:active {
+.button:active {
   background-color: #ffdeda;
   outline: 0;
 }
 
-.main-project-button:hover {
+.button:hover {
   outline: 0;
 }
 
 @media (min-width: 768px) {
-  .main-project-button {
+  .button {
     padding: 0 40px;
+  }
+}
+
+
+// button for projects - js, html, css
+
+.projects__item--button {
+  height: 24px;
+  font-size: 14px;
+  padding: 0 14px;
+  &::after {
+    height: 24px;
   }
 }

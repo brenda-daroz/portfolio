@@ -51,7 +51,7 @@ const bootstrap = {
 }
 
 
-function createSkill(skill) {
+function createProject(skill) {
   const divItem = h("div")
   divItem.classList.add("img-skills-container")
   const itemImage = h("img")
@@ -69,10 +69,10 @@ const skillsList = [
   html, css, sass, js, react, rails, sql, github, git, bootstrap
 ]
 
-function renderSkill(skills) {
-  skills.forEach(skill => {
-    createSkill(skill)
+function renderProject(projects) {
+  projects.forEach(project => {
+    createProject(project)
   });
 }
 
-renderSkill(skillsList)
+renderProject(skillsList)
