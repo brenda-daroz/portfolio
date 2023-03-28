@@ -13,6 +13,11 @@
   flex-wrap: wrap;
 }
 
+.projects__container::after {
+  content: "";
+  width: 20rem;
+}
+
 .img {
   width: 18rem;
   height: 14rem;
