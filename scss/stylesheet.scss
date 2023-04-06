@@ -1,7 +1,7 @@
-@import 'variables', 'homepage', 'reset', 'menu', 'projects', 'footer', 'skills', 'button';
+@import 'variables', 'homepage', 'reset', 'menu', 'projects', 'footer', 'skills', 'button', 'form';
 
 body {
-    background-color: $background-color;
-    font-family: $font;
-    height: 100vh;
+  background-color: $background-color;
+  font-family: $font;
+  height: 100vh;
 }

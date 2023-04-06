@@ -325,7 +325,6 @@ footer {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(9.2px);
           backdrop-filter: blur(9.2px);
-  padding: 0.8rem 0;
   height: 80px;
   display: grid;
   place-items: center;
@@ -440,6 +439,88 @@ footer p {
 }
 .projects__item--button::after {
   height: 24px;
+}
+
+.intro_contact {
+  width: 100vw;
+  background: #f45f93;
+}
+
+form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 32px;
+  color: black;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+
+form input,
+textarea,
+button {
+  width: 300px;
+}
+
+button {
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  height: 100px !important;
+}
+
+.did-floating-label-content {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.did-floating-label {
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 11px;
+  padding: 0 5px;
+  background: rgb(244, 95, 147);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.did-floating-input,
+.did-floating-select {
+  font-size: 12px;
+  display: block;
+  height: 36px;
+  padding: 0 20px;
+  background: rgb(244, 95, 147);
+  color: #323840;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-bottom: 3px solid black;
+  box-sizing: border-box;
+}
+.did-floating-input:focus,
+.did-floating-select:focus {
+  outline: none;
+}
+.did-floating-input:focus ~ .did-floating-label,
+.did-floating-select:focus ~ .did-floating-label {
+  top: -8px;
+  font-size: 13px;
 }
 
 body {
