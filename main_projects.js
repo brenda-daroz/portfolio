@@ -1,5 +1,19 @@
 import { h } from "./static_projects.js"
 
+const erasTour = {
+  title: "Eras Tour - Surprise Songs Tracker",
+  image: "images/eras-tour.png",
+  liveCode: "https://eras-tour.brenda.fyi/",
+  gitHub: "https://github.com/brenda-daroz/eras-tour",
+  p: ["Web application to help users track the songs played during the Eras Tour",
+    "Built with React, Express.js, Fly, and Styled Components",
+    "Used Setlist API to fetch information about songs",
+    "Used Fly to deploy the the server and Github Pages to deploy the client",
+    "Used Styled Components to style the application"],
+  language: "react"
+}
+
+
 const weatherApp = {
   title: "Weather App",
   image: "images/weather-app.png",
@@ -83,7 +97,7 @@ function createProject(project) {
   }
 }
 
-let projects = [weatherApp, movieSearchApp, miseEnPlace]
+let projects = [erasTour, weatherApp, movieSearchApp, miseEnPlace]
 
 function renderProject(projects) {
   projects.forEach(project => {
