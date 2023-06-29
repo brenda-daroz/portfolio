@@ -335,8 +335,8 @@ footer p {
 }
 
 .img-skills {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
 }
 
@@ -349,14 +349,13 @@ footer p {
 
 .img-skills-container {
   display: flex;
-  font-size: 1.4em;
+  font-size: 1.1em;
   align-items: center;
-  justify-content: space-between;
   box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075), 0 2px 2px hsla(0, 0%, 0%, 0.075), 0 4px 4px hsla(0, 0%, 0%, 0.075), 0 8px 8px hsla(0, 0%, 0%, 0.075), 0 16px 16px hsla(0, 0%, 0%, 0.075);
   border-radius: 1rem;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem 2rem;
 }
 
